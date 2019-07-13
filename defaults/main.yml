@@ -1,2 +1,4 @@
 ---
 # defaults file for unzip
+app: unzip
+desired_state: present

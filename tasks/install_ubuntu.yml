@@ -4,7 +4,6 @@
 - name: Installing {{ app }} 
   apt:
     name: "{{ app }}"
-    state: latest
+    state: "{{ desired_state }}"
     force_apt_get: yes
     update_cache: yes
-  notify: check_version
