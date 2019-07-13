@@ -1,0 +1,7 @@
+---
+# tasks file for unzip
+
+- name: Import ubuntu.yml if OS family is Ubuntu
+  import_tasks: install_ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  notify: check_version

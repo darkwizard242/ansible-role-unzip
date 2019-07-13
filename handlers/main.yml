@@ -1,0 +1,11 @@
+---
+# handlers file for unzip
+- name: check_version
+  shell: "{{ app }} -v | awk 'NR==1{print $2}'"
+  args:
+    executable: /bin/bash
+    warn: false
+  register: unzip_version
+- name: Print {{ app }} version
+  debug:
+    var: unzip_version.stdout"

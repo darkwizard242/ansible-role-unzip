@@ -1,0 +1,10 @@
+---
+# tasks file for unzip
+
+- name: Installing {{ app }} 
+  apt:
+    name: "{{ app }}"
+    state: latest
+    force_apt_get: yes
+    update_cache: yes
+  notify: check_version
