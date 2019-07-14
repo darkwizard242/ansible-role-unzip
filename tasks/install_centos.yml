@@ -1,0 +1,8 @@
+---
+# tasks file for unzip - CentOS
+
+- name: Installing {{ app }}
+  yum:
+    name: "{{ app }}"
+    state: "{{ desired_state }}"
+    update_cache: yes

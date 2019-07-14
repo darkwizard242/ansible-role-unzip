@@ -1,7 +1,7 @@
 Ansible Role: unzip
 =========
 
-Role to install (_by default_) `unzip` package  or uninstall (_if  passed as var_)  on **Ubuntu** systems.
+Role to install (_by default_) `unzip` package  or uninstall (_if  passed as var_)  on **Ubuntu** and **CentOS** systems.
 
 Requirements
 ------------

@@ -4,4 +4,7 @@
 - name: Import ubuntu.yml if OS family is Ubuntu
   import_tasks: install_ubuntu.yml
   when: ansible_distribution == "Ubuntu"
-  notify: check_version
+
+- name: Import install_centos.yml if OS family is CentOS
+  import_tasks: install_centos.yml
+  when: ansible_distribution == "CentOS"
