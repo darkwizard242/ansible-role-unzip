@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: unzip
   author: Ali Muhammad
-  description: Role for installing or uninstalling 'unzip' package.
+  description: Role for dynamically installing or uninstalling 'unzip' package.
   company: none
   license: MIT
   min_ansible_version: 2.4
