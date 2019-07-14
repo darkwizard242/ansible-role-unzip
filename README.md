@@ -31,28 +31,29 @@ Example Playbook
 ----------------
 
 For default behaviour of role (i.e. installation of **unzip** package) in ansible playbooks.
-
-    - hosts: servers
-      roles:
-         - role: darkwizard242.unzip
-
+```yaml
+- hosts: servers
+  roles:
+    - role: darkwizard242.unzip
+```
 
 For customizing behavior of role (i.e. installation of latest **unzip** package) in ansible playbooks.
-
-    - hosts: servers
-      roles:
-         - role: darkwizard242.unzip
-           vars:
-             desired_state: latest
+```yaml
+- hosts: servers
+  roles:
+    - role: darkwizard242.unzip
+      vars:
+        desired_state: latest
+```
              
 For customizing behavior of role (i.e. un-installation of **unzip** package) in ansible playbooks.
-
-    - hosts: servers
-      roles:
-         - role: darkwizard242.unzip
-           vars:
-             desired_state: absent
-         
+```yaml
+- hosts: servers
+  roles:
+    - role: darkwizard242.unzip
+      vars:
+        desired_state: absent
+```      
          
 License
 -------
