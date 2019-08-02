@@ -1,9 +1,9 @@
 ---
 # tasks file for unzip - Ubuntu
 
-- name: Installing {{ app }}
+- name: Installing {{ unzip_app }}
   apt:
-    name: "{{ app }}"
-    state: "{{ desired_state }}"
+    name: "{{ unzip_app }}"
+    state: "{{ unzip_desired_state }}"
     force_apt_get: yes
     update_cache: yes

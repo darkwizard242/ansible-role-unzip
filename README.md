@@ -14,13 +14,13 @@ Role Variables
 Available variables are listed below (located in  `defaults/main.yml`):
 
 ```yaml
-app: unzip
-desired_state: present
+unzip_app: unzip
+unzip_desired_state: present
 ```
 
-Variable `app`: Defines the app to install i.e. **unzip**
+Variable `unzip_app`: Defines the app to install i.e. **unzip**
 
-Variable `desired_state`: Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
+Variable `unzip_desired_state`: Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
 
 Dependencies
 ------------
@@ -43,18 +43,18 @@ For customizing behavior of role (i.e. installation of latest **unzip** package)
   roles:
     - role: darkwizard242.unzip
       vars:
-        desired_state: latest
+        unzip_desired_state: latest
 ```
-             
+
 For customizing behavior of role (i.e. un-installation of **unzip** package) in ansible playbooks.
 ```yaml
 - hosts: servers
   roles:
     - role: darkwizard242.unzip
       vars:
-        desired_state: absent
-```      
-         
+        unzip_desired_state: absent
+```
+
 License
 -------
 
