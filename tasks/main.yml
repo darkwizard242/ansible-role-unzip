@@ -2,7 +2,7 @@
 # tasks file for unzip
 
 - name: Import ubuntu.yml if OS family is Ubuntu
-  import_tasks: install_ubuntu.yml
+  import_tasks: install_debian.yml
   when: ansible_os_family == "Debian"
 
 - name: Import install_centos.yml if OS family is CentOS

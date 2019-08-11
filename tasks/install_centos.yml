@@ -1,7 +1,7 @@
 ---
 # tasks file for unzip - CentOS
 
-- name: Installing {{ unzip_app }}
+- name: Installing {{ unzip_app }} on EL based systems.
   yum:
     name: "{{ unzip_app }}"
     state: "{{ unzip_desired_state }}"
