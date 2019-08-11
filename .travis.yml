@@ -11,6 +11,6 @@ before_install:
   - sudo apt-get -qq update
 install:
   - pip3 install ansible molecule docker
-  - ansible-galaxy install -f darkwizard242.unzip
+  - ansible-galaxy install -f darkwizard242.unzip -p $TRAVIS_BUILD_DIR
 script:
   - molecule test
