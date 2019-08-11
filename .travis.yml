@@ -10,6 +10,7 @@ services:
 before_install:
   - sudo apt-get -qq update
 install:
-  - pip3 install molecule docker
+  - pip3 install ansible molecule docker
+  - ansible-galaxy install -f darkwizard242.unzip
 script:
   - molecule test
