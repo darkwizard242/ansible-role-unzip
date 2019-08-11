@@ -1,0 +1,17 @@
+---
+sudo: required
+dist: bionic
+language: python
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+services:
+  - docker
+before_install:
+  - sudo apt-get -qq update
+install:
+  - pip3 install molecule docker
+script:
+  - molecule test
