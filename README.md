@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/darkwizard242/ansible-role-unzip.svg?branch=master)](https://travis-ci.org/darkwizard242/ansible-role-unzip)
+[![Build Status](https://travis-ci.com/darkwizard242/ansible-role-unzip.svg?branch=master)](https://travis-ci.com/darkwizard242/ansible-role-unzip)
 
 Ansible Role: unzip
 =========
