@@ -31,7 +31,7 @@ before_script:
   - cd darkwizard242.$ROLE_NAME
 
 script:
-  - sonar-scanner
+  - sonar-scanner -Dsonar.projectVersion=$TRAVIS_JOB_ID
   - molecule test
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/?branch=master
