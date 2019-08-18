@@ -1,4 +1,11 @@
 [![Build Status](https://travis-ci.com/darkwizard242/ansible-role-unzip.svg?branch=master)](https://travis-ci.com/darkwizard242/ansible-role-unzip)
+![Ansible Role](https://img.shields.io/ansible/role/42038?color=dark%20green)
+![Ansible Role](https://img.shields.io/ansible/role/d/42038?color=dark&style=flat-square)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/42038?label=ansible%20quality%20score)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-unzip&metric=alert_status)](https://sonarcloud.io/dashboard?id=ansible-role-unzip)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-unzip?label=release)
+![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-unzip?color=orange&style=flat-square)
+
 
 Ansible Role: unzip
 =========
