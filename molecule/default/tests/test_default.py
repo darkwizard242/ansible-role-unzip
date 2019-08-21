@@ -6,12 +6,21 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-def test_unzip(host):
-    unzipfile = host.file('/usr/bin/unzip')
-    unzippackage = host.package("unzip")
+UNZIP_BINARY_PATH = '/usr/bin/unzip'
+PACKAGE = 'unzip'
 
-    assert unzipfile.exists
-    assert unzipfile.user == 'root'
-    assert unzipfile.group == 'root'
-    assert unzipfile.mode == 0o755
-    assert unzippackage.is_installed
+
+def test_unzip_package_installed(host):
+    host.package("PACKAGE").is_installed
+
+
+def test_unzip_binary_exists(host):
+    host.file('UNZIP_BINARY_PATH').exists
+
+
+def test_unzip_binary_file(host):
+    host.file('UNZIP_BINARY_PATH').is_file
+
+
+def test_unzip_binary_whereis(host):
+    host.check_output('whereis unzip') == UNZIP_BINARY_PATH
