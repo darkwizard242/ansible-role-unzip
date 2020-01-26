@@ -18,5 +18,5 @@ def test_unzip_binary_file(host):
     assert host.file('/usr/bin/unzip').is_file
 
 
-def test_unzip_binary_whereis(host):
-    assert host.check_output('whereis unzip') == '/usr/bin/unzip'
+def test_unzip_binary_which(host):
+    assert host.check_output('which unzip') == '/usr/bin/unzip'
