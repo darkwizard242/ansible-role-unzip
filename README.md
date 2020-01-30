@@ -23,7 +23,7 @@ unzip_desired_state: present
 
 Variable            | Value (default) | Description
 ------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------
-unzip_app           | unzip           | Defines the app to install i.e. **terraform**
+unzip_app           | unzip           | Defines the app to install i.e. **unzip**
 unzip_desired_state | present         | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Defaults to `present`.
 
 ## Dependencies
