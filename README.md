@@ -37,7 +37,7 @@ For default behaviour of role (i.e. installation of **unzip** package) in ansibl
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.unzip
+    - darkwizard242.unzip
 ```
 
 For customizing behavior of role (i.e. installation of latest **unzip** package) in ansible playbooks.
@@ -45,9 +45,9 @@ For customizing behavior of role (i.e. installation of latest **unzip** package)
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.unzip
-      vars:
-        unzip_desired_state: latest
+    - darkwizard242.unzip
+  vars:
+    unzip_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **unzip** package) in ansible playbooks.
@@ -55,9 +55,9 @@ For customizing behavior of role (i.e. un-installation of **unzip** package) in 
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.unzip
-      vars:
-        unzip_desired_state: absent
+    - darkwizard242.unzip
+  vars:
+    unzip_desired_state: absent
 ```
 
 ## License
