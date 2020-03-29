@@ -1,7 +1,7 @@
 ---
 # tasks file for unzip - Ubuntu
 
-- name: Installing {{ unzip_app }} on Debian based systems.
+- name: "Installing {{ unzip_app }} on Debian based systems."
   apt:
     name: "{{ unzip_app }}"
     state: "{{ unzip_desired_state }}"
