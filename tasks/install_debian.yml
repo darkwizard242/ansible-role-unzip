@@ -1,7 +1,7 @@
 ---
-# tasks file for unzip - Ubuntu
+# tasks file for unzip - Debian/Ubuntu Family
 
-- name: "Installing {{ unzip_app }} on Debian based systems."
+- name: Debian/Ubuntu Family | Installing {{ unzip_app }}
   apt:
     name: "{{ unzip_app }}"
     state: "{{ unzip_desired_state }}"
