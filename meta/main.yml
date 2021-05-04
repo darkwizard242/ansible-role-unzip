@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: unzip
-  author: Ali Muhammad
+  author: darkwizard242
   description: Role for dynamically installing or uninstalling 'unzip' package.
   company: none
   license: MIT
