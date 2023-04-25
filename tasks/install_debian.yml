@@ -2,7 +2,7 @@
 # tasks file for unzip - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ unzip_app }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ unzip_app }}"
     state: "{{ unzip_desired_state }}"
     force_apt_get: yes

@@ -2,7 +2,7 @@
 # tasks file for unzip - EL
 
 - name: EL Family | Installing {{ unzip_app }}
-  yum:
+  ansible.builtin.yum:
     name: "{{ unzip_app }}"
     state: "{{ unzip_desired_state }}"
     update_cache: yes
